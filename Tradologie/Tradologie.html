@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Tradologie</title>
+        <style>
+            .col-lg-8 p {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            .header {
+                background-color: #f26621;
+                color: white;
+            }
+            .right_top_header {
+                text-align: right;
+            }
+
+            .right_top_header {
+                text-align: right;
+            }
+            .top_header_divide {
+                width: 70%;
+                height: 100%;
+                float: left;
+                position: relative;
+            }
+            .top_header_divide span {
+                font-size: 12px;
+                font-weight: 500;
+                margin-right: 25px;
+                color: var(--text-color);
+                cursor: pointer;
+                height: 100%;
+                position: relative;
+            }
+            .top_header_dividee {
+                width: 30%;
+                height: 100%;
+                float: left;
+                position: relative;
+            }
+            .top_header_dividee {
+                width: 30%;
+                height: 100%;
+                float: left;
+                position: relative;
+            }
+            .header {
+                width: 100%;
+
+                height: 42px;
+            }
+            .navbar-light .navbar-toggler {
+                color: rgba(0, 0, 0, 0.55);
+                border-color: rgb(251 247 247 / 0%);
+            }
+
+            .navbar-toggler:focus {
+                text-decoration: none;
+                outline: 0;
+                box-shadow: none;
+            }
+
+            .top_header_divide span a {
+                color: inherit;
+                text-decoration: none;
+
+                height: 100%;
+            }
+            .top_header_divide span i {
+                width: 12px;
+                position: relative;
+                top: -1px;
+                margin-right: 1px;
+            }
+            .max_width_for_top_header {
+                max-width: 1300px;
+                width: 100%;
+                margin: auto;
+                position: relative;
+                height: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .btn-primarysd {
+                color: #fff;
+                background-color: #0d7f41;
+                border-color: #0d7f41;
+            }
+
+            .navbar-light .navbar-nav .nav-link.active,
+            .navbar-light .navbar-nav .show > .nav-link {
+                color: rgba(0, 0, 0, 0.9);
+                font-weight: 600;
+            }
+            .navbar-light .navbar-nav .nav-link {
+                color: rgb(15 14 14);
+                font-weight: 400;
+                font-size: 15px;
+                padding-left: 21px;
+            }
+            /* body{
+    font-family: 'Ropa Sans', sans-serif;
+} */
+            .main {
+                font-family: Arial;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .action {
+                display: block;
+                margin: 100px auto;
+                width: 100%;
+                text-align: center;
+            }
+            .action a {
+                display: inline-block;
+                padding: 5px 10px;
+                background: #f30;
+                color: #fff;
+                text-decoration: none;
+                transition: 400ms;
+            }
+            .action a:hover {
+                background: #000;
+            }
+            .slick-slider {
+                margin-bottom: 0px;
+            }
+            .search-fields-container {
+                background-color: #fff;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                padding: 30px;
+            }
+            .banner-con {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                width: 100%;
+            }
+            .buyer {
+                font-size: 22px;
+                font-weight: 500;
+                background: #0d7f41;
+                max-width: 100%;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                border: 1px solid #ccc;
+                text-shadow: 4px 4px 4px rgb(78 78 80 / 33%);
+                clear: both;
+                margin: 0 auto 10px;
+                display: flex;
+                justify-content: center;
+            }
+            /* @media (min-width: 1025px) {
+                .margintopsd {
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    margin-top: -441px;
+                }
+            } */
+            .footer_dcrip p a {
+                font-size: 12px;
+                line-height: 1.8;
+                color: #828282;
+                font-weight: 300;
+                text-decoration: none;
+            }
+            .footer_dcrip .trad_products p b {
+                font-size: 14px;
+                color: #071130e0;
+            }
+            .footer {
+                background-color: #ebeaea;
+            }
+            .footer_dcrip p,
+            .footer_dcrip p a {
+                font-size: 12px;
+                line-height: 1.8;
+                color: #828282;
+                font-weight: 300;
+                text-decoration: none;
+            }
+            .btn-tradologie {
+                display: inline-block;
+                font-size: 14px;
+                background: #f26621;
+                color: white;
+                padding: 7px;
+                margin-right: 5px;
+                border-radius: 2px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: 400ms;
+            }
+            .btn-tradologie:hover {
+                display: inline-block;
+                font-size: 11px;
+                background: #f26621;
+                color: white;
+                padding: 7px;
+                margin-right: 5px;
+                border-radius: 2px;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .f1_content h4 {
+                font-size: var(--footer-text);
+                text-transform: uppercase;
+
+                font-size: 15px;
+                line-height: 1.8;
+                color: #1c1b1a;
+            }
+            .f1_content a {
+                font-size: 14px;
+                color: #828282;
+                line-height: 1.6;
+                transition-duration: 0.5s;
+                text-decoration: none;
+            }
+            li {
+                list-style-type: none;
+            }
+            ul {
+                padding-left: 0rem;
+            }
+            .downlaod_app {
+                width: 100%;
+                height: 520px;
+                background: #f26621;
+                position: relative;
+                overflow: hidden;
+            }
+            .downlaod_app:after {
+                position: absolute;
+                content: "";
+                width: 360px;
+                height: 558px;
+                right: -100px;
+                top: 0;
+                background-image: url(https://www.tradologie.com/lp/img/paddy.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                pointer-events: none;
+            }
+            .app_heading {
+                width: 100%;
+                float: left;
+                position: relative;
+            }
+            .app_heading h3 {
+                font-size: 28px;
+                position: relative;
+                color: white;
+            }
+            .android_ios {
+                width: 80%;
+                float: left;
+                position: relative;
+                margin-top: 30px;
+            }
+            .android p {
+                font-size: 13px;
+                width: 100%;
+                float: left;
+                position: relative;
+                color: #fff;
+            }
+            .android {
+                width: 50%;
+                float: left;
+                position: relative;
+            }
+            .app_text p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 0;
+                color: white;
+            }
+
+            .android h3 {
+                font-size: 18px;
+                width: 100%;
+                float: left;
+                position: relative;
+                color: #fff;
+            }
+            .mobile_section {
+                width: 30%;
+                float: left;
+                position: relative;
+                margin-top: 41px;
+            }
+            .app_download_section {
+                width: 70%;
+                float: left;
+                position: relative;
+                margin-top: 111px;
+            }
+            .card-header {
+                padding: 0;
+                margin-bottom: 0;
+                background-color: rgba(0, 0, 0, 0.03);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+                transition: 400ms;
+            }
+            .products_button a {
+                width: calc(50% - 10px);
+                display: inline-block;
+                font-size: 11px;
+                background: #ff5300;
+                color: white;
+                padding: 4px;
+                margin-right: 5px;
+                border-radius: 2px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: 400ms;
+            }
+            .products_button a:hover {
+                width: calc(50% - 10px);
+                display: inline-block;
+                font-size: 11px;
+                background: #ff5300;
+                color: white;
+                padding: 4px;
+                margin-right: 5px;
+                border-radius: 2px;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .products_button .get_A_quotes {
+                background: rgb(245, 244, 244);
+                color: #787373;
+            }
+            .card {
+                transition: 400ms;
+            }
+            .card:hover {
+                box-shadow: rgb(0 0 0 / 30%) 0 0 40px;
+                transform: translateY(-10px);
+            }
+            .card-header:hover {
+                transition: 0.5s;
+            }
+            .bg-training {
+                background-image: url(https://www.bhartiyatech.com/assets/img/bg-training.jpg);
+            }
+            .service {
+                background: #fff;
+                border-top: 5px solid #0d7f41;
+                box-shadow: 0 0 12px -9px;
+                transition: 0.3s;
+                padding: 12px 15px;
+                margin-bottom: 1em;
+                transition: 400ms;
+            }
+            .service:hover {
+                background: #fff;
+                border-top: 5px solid #0d7f41;
+                box-shadow: rgb(0 0 0 / 30%) 0 0 40px;
+                transform: translateY(-5px);
+                padding: 12px 15px;
+                margin-bottom: 1em;
+            }
+            .how_child {
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+
+                transform: translate(-50%);
+            }
+            @media (max-width: 1020px) {
+                .mobile_section {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            @media (max-width: 1020px) {
+                .mobile_section {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            @media (max-width: 1020px) {
+                .downlaod_app:after {
+                    opacity: 0.2;
+                }
+            }
+            @media (max-width: 1130px) {
+                .downlaod_app:after {
+                    width: 280px;
+                }
+            }
+            @media (max-width: 1020px) {
+                .app_download_section {
+                    margin-top: 20px;
+                    text-align: center;
+                    width: 100%;
+                    padding: 0;
+                    padding-bottom: 70px;
+                }
+            }
+            @media (max-width: 1130px) {
+                .app_download_section {
+                    padding-left: 30px;
+                }
+            }
+            @media (max-width: 1020px) {
+                .downlaod_app {
+                    height: auto;
+                }
+            }
+            @media (max-width: 1230px) {
+                .downlaod_app {
+                    padding-left: 2px;
+                    padding-right: 25px;
+                }
+            }
+            @media (max-width: 1020px) {
+                .divide_app_img a {
+                    /* float: initial; */
+                    display: inline-block;
+                }
+            }
+            @media (max-width: 750px) {
+                .divide_app_img a img {
+                    width: 98px;
+                }
+            }
+            @media (max-width: 1220px) {
+                .hide_desk {
+                    display: none;
+                }
+            }
+            @media (max-width: 1220px) {
+                .right_top_header {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            @media (max-width: 1220px) {
+                .top_header_divide .left_language {
+                    float: left;
+                }
+            }
+            @media (max-width: 1220px) {
+                .max_width_for_top_header {
+                    padding-left: 24px;
+                    padding-right: 15px;
+                }
+            }
+            @media (max-width: 1220px) {
+                .top_header_dividee {
+                    display: none;
+                }
+            }
+            @media (max-width: 750px) {
+                .android {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+            @media (max-width: 1020px) {
+                .android_ios {
+                    width: 100%;
+                }
+            }
+            .last-footer {
+                background-color: #bbbab9;
+                color: white;
+                padding: 5px;
+                text-align: center;
+                font-weight: 600;
+                padding-top: 18px;
+                font-size: 19px;
+            }
+            .containersd {
+                min-height: 315px;
+                margin: 0 auto;
+                position: relative;
+                padding-bottom: 30px;
+                overflow: hidden;
+            }
+            h1 {
+                text-align: center;
+                text-shadow: 0 1px white;
+                color: #02303f;
+            }
+            h2 {
+                color: #736861;
+                margin: 15px 0 5px;
+                text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+            }
+
+            input[type="radio"] {
+                position: absolute;
+                width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+                height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+                padding: 0;
+                margin: -1px;
+                border: 0;
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+            }
+            label {
+                display: block;
+                width: 26%;
+                border: 2px solid #0c0c0c;
+                position: absolute;
+                bottom: 5px;
+                cursor: pointer;
+                transition: border-color 0.3s linear;
+            }
+
+            label.second {
+                left: 34%;
+            }
+            label.third {
+                left: 68%;
+            }
+
+            blockquote {
+                margin: 0;
+                padding: 30px;
+
+                background-color: #db532b;
+                color: white;
+                box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+                position: relative;
+                transition: background-color 0.6s linear;
+            }
+
+            blockquote:after {
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 100%;
+                border: solid transparent;
+                border-top-color: #da532b;
+                border-left-color: #da532b;
+                border-width: 10px;
+                left: 10%;
+            }
+            #second:checked ~ .two blockquote {
+                background-color: purple;
+            }
+            .two blockquote:after {
+                border: solid transparent;
+                border-top-color: purple;
+                border-left-color: purple;
+                border-width: 10px;
+            }
+            #third:checked ~ .three blockquote {
+                background-color: #54885f;
+            }
+            .three blockquote:after {
+                border: solid transparent;
+                border-top-color: #54885f;
+                border-left-color: #54885f;
+                border-width: 10px;
+            }
+            .quotes {
+                position: absolute;
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 5em;
+            }
+            .leftq {
+                top: -25px;
+                left: 5px;
+            }
+            .rightq {
+                bottom: -10px;
+                right: 5px;
+            }
+            .imgs {
+                float: left;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+            .slides {
+                position: absolute;
+                left: -100%;
+                opacity: 0;
+                transition: all 0.6s ease-in;
+            }
+
+            #first:checked ~ label.first {
+                border-width: 6px;
+                border-color: #db532b;
+            }
+            #second:checked ~ label.second {
+                border-width: 6px;
+                border-color: purple;
+            }
+            #third:checked ~ label.third {
+                border: 6px solid #54885f;
+            }
+
+            #first:checked ~ div.one {
+                left: 0;
+                opacity: 1;
+            }
+            #second:checked ~ div.two {
+                left: 0;
+                opacity: 1;
+            }
+            #third:checked ~ div.three {
+                left: 0;
+                opacity: 1;
+            }
+            .testi_text {
+                font-size: 28px;
+                margin-top: 20px;
+                color: #8f8c8c;
+            }
+            .sectionsd {
+                background-color: #ffebee54;
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+            .text-color {
+                color: #f26621;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header p-2">
+            <div class="max_width_for_top_header">
+                <div class="top_header_dividee">
+                    <span> info@tradologie.com</span>
+                    <span> +91 85959 57412 </span>
+                </div>
+                <div class="top_header_divide right_top_header">
+                    <span class="hide_desk"><a href="#download_app">Download App</a></span>
+                    <span class="hide_desk"><a href="supplier.html"> Sell On Tradologie</a></span>
+                    <span class="hide_desk"><a href="careers.html">Careers</a></span>
+                    <span class="left_language"
+                        >Choose language : <a rel="alternate" hreflang="en" href="javascript:;" onclick="enReplaces()"> EN </a> |
+                        <a rel="alternate" hreflang="ar" href="javascript:;" onclick="arReplaces()"> AR </a> |
+                        <a rel="alternate" hreflang="fr" href="javascript:;" onclick="frReplaces()"> FR </a></span
+                    >
+                    <span class="hide_desk"><a href="supplier.html"> Sell On Tradologie</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"><img src="https://www.tradologie.com/lp/img/logo.png" alt="" /></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-item nav-link active">About us</a>
+                            <a href="#" class="nav-item nav-link">Product</a>
+                            <a href="#" class="nav-item nav-link">How it works</a>
+                            <a href="#" class="nav-item nav-link">Why Tradologie</a>
+
+                            <a href="#" class="nav-item nav-link">Contact us</a>
+                            <a href="#" class="nav-item nav-link">Branded Solution</a>
+                            <a href="#" class="nav-item nav-link">Media</a>
+
+                            <a href="" class="btn btn-primarysd">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://jkfastmart.com//frontendtheme/images/about-pic2.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.annapurnagroup.in/assets/images/inner-banner/31d318ce797c9a13b8cf7a2def8d32b2.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://jkfastmart.com//frontendtheme/images/about-pic2.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <section class="banner-con d-lg-block d-none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="search-fields-container">
+                                    <form action="">
+                                        <div class="col-md-12">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option hidden>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <br />
+                                        </div>
+                                        <div class="col-md-12">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option hidden>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <br />
+                                        </div>
+                                        <div class="col-md-12">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option hidden>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 pt-3">
+                                            <a href="" class="btn btn-danger w-100">Submit</a>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <img width="70" src="https://www.tradologie.com/lp/img/buyer_qr.png" alt="" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="qr_text">
+                                                    <h5>Download Buyer App</h5>
+                                                    <p>Scan to download</p>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div class="col-md-12 pt-2">
+                                                <h6 class="text-center">DOWNLOAD BUYER APP</h6>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- <section class="margintopsd"> -->
+            <section>
+                <div class="buyer">
+                    <div class="blink"><strong class="mr--10">Buy Or Sell</strong> Globally without a Phone Call or AN Email</div>
+                </div>
+            </section>
+
+            <section class="m-3">
+                <div class="container text-center">
+                    <h3 class="about_h2_heading text-center fw-bold">What Is Tradologie?</h3>
+                    <p class="text-center">
+                        World's First Enquiry-To-Delivery Trade Enabling Platform solely devoted to Bulk Sellers and Buyers alike, Tradologie is tirelessly facilitating ways of enquiring, filtering,
+                        bidding, negotiating, as well as of payment, by assembling all essentials in one revolutionary platform while at the same time shouldering the needs of our partners most
+                        efficiently.
+                    </p>
+                    <a href="about-us.html" class="btn btn-tradologie text-center">Read More</a>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6 py-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 1</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w4.png" alt="" />
+
+                                    <h6 class="pt-3">POST YOUR ENQUIRY</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 py-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 2</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w3.png" alt="" />
+                                    <h6 class="pt-3">SELLER NEGOTIATION</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 pt-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 3</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w2.png" alt="" />
+                                    <h6 class="pt-3">COUNTER OFFER</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 pt-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 4</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w1.png" alt="" />
+                                    <h6 class="pt-3">BUYER PAY-IN</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 pt-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 5</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w1.png" alt="" />
+                                    <h6 class="pt-3">DELIVERY OF GOODS</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 pt-2">
+                            <div class="card shadow border-end">
+                                <div class="card-body p-4 text-center m-2">
+                                    <h4 class="text-color">Step 6</h4>
+                                    <img src="https://www.tradologie.com/lp/img/w1.png" alt="" />
+                                    <h6 class="pt-3">PAYMENT SUCCESSFUL</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-training mt-3 my-3 pt-4 py-4">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="text-center py-3 fw-bold">HOW TRADOLOGIE HELPS SUPPLIERS</h4>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="service h-100 text-center">
+                                <div class="text-center">
+                                    <img src="https://www.tradologie.com/lp/img/h1.png" alt="" />
+                                </div>
+                                <h6>Not Lead, We Ensure Trade</h6>
+                                <p>With Sellers being Approached only after buyers pay a Performance Guarantee...</p>
+                                <a href="" class="how_child">know more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="service h-100 text-center">
+                                <div class="text-center">
+                                    <img src="https://www.tradologie.com/lp/img/h2.png" alt="" />
+                                </div>
+                                <h6>Connect with Global Buyer</h6>
+                                <p>With Sellers being Approached only after buyers pay a Performance Guarantee...</p>
+                                <a href="" class="how_child">know more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="service h-100 text-center">
+                                <div class="text-center">
+                                    <img src="https://www.tradologie.com/lp/img/h3.png" alt="" />
+                                </div>
+                                <h6>Assured Payment, Secured Trade</h6>
+                                <p>With Sellers being Approached only after buyers pay a Performance Guarantee...</p>
+                                <a href="" class="how_child">know more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="service h-100 text-center">
+                                <div class="text-center">
+                                    <img src="https://www.tradologie.com/lp/img/h4.png" alt="" />
+                                </div>
+                                <h6>Manage Profile Seamlessly</h6>
+                                <p>With Sellers being Approached only after buyers pay a Performance Guarantee...</p>
+                                <a href="" class="how_child">know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container mt-4 pt-4 py-5 my-4">
+                    <div class="row">
+                        <h4 class="fw-bold">WHY TRADOLOGIE</h4>
+                        <div class="col-lg-7">
+                            <div id="carouselExampleFade" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="https://www.tradologie.com/lp/img/slider5.jpg" class="d-block w-100 img-thumbnail" alt="holiday tour package for punjab" />
+                                    </div>
+                                    <div class="carousel-item active carousel-item-start">
+                                        <img src="https://www.tradologie.com/lp/img/slider6.jpg" class="d-block w-100 img-thumbnail" alt="holiday tour package for chandigarh" />
+                                    </div>
+                                    <div class="carousel-item carousel-item-next carousel-item-start">
+                                        <img src="https://www.tradologie.com/lp/img/slider4.jpg" class="d-block w-100 img-thumbnail" alt="holiday tour package for arunachal" />
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6 py-2">
+                                    <div class="card shadow border-end">
+                                        <div class="card-body p-4 text-center m-2">
+                                            <img src="https://www.tradologie.com/lp/img/w4.png" alt="" />
+                                            <h6 class="pt-3">TRADE ACROSS THE WORLD</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 py-2">
+                                    <div class="card shadow border-end">
+                                        <div class="card-body p-4 text-center m-2">
+                                            <img src="https://www.tradologie.com/lp/img/w3.png" alt="" />
+                                            <h6 class="pt-3">COMPLETELY TRANSPARENT</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 pt-2">
+                                    <div class="card shadow border-end">
+                                        <div class="card-body p-4 text-center m-2">
+                                            <img src="https://www.tradologie.com/lp/img/w2.png" alt="" />
+                                            <h6 class="pt-3">MODELLED AROUND BUSINESS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pt-2">
+                                    <div class="card shadow h-100 border-end">
+                                        <div class="card-body p-4 text-center m-2">
+                                            <img src="https://www.tradologie.com/lp/img/w1.png" alt="" />
+                                            <h6 class="pt-3">COST EFFECTIVE</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sectionsd">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="fw-bold">TRENDING PRODUCTS</h4>
+
+                        <div class="col-lg-12 my-3">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card shadow-lg">
+                                        <div class="card-header">
+                                            <img src="https://www.tradologie.com/lp/img/rice.jpg" alt="" />
+                                        </div>
+                                        <div class="card-body">
+                                            <h6>Rice</h6>
+                                            <div class="text-center products_button">
+                                                <a href="" class="btn btn-tradologie">view details</a>
+                                                <a href="" class="btn get_A_quotes">get a quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card shadow">
+                                        <div class="card-header">
+                                            <img src="https://www.tradologie.com/lp/img/tmt.jpg" alt="" />
+                                        </div>
+                                        <div class="card-body">
+                                            <h6>TMT Saria</h6>
+                                            <div class="text-center products_button">
+                                                <a href="" class="btn btn-tradologie">view details</a>
+                                                <a href="" class="btn get_A_quotes">get a quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card shadow">
+                                        <div class="card-header">
+                                            <img src="https://www.tradologie.com/lp/img/meati.jpg" alt="" />
+                                        </div>
+                                        <div class="card-body">
+                                            <h6>meat</h6>
+                                            <div class="text-center products_button">
+                                                <a href="" class="btn btn-tradologie">view details</a>
+                                                <a href="" class="btn get_A_quotes">get a quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card shadow">
+                                        <div class="card-header">
+                                            <img src="https://www.tradologie.com/lp/img/pulses.jpg" alt="" />
+                                        </div>
+                                        <div class="card-body">
+                                            <h6>Rice</h6>
+                                            <div class="text-center products_button">
+                                                <a href="" class="btn btn-tradologie">view details</a>
+                                                <a href="" class="btn get_A_quotes">get a quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card shadow">
+                                        <div class="card-header">
+                                            <img src="https://www.tradologie.com/lp/img/cottonyarn-y.jpg" alt="" />
+                                        </div>
+                                        <div class="card-body">
+                                            <h6>International Logistics / Yarn</h6>
+                                            <div class="text-center products_button">
+                                                <a href="" class="btn btn-tradologie">view details</a>
+                                                <a href="" class="btn get_A_quotes">get a quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container mt-5">
+                <h4 class="fw-bold my-4">FOOD, AGRICULTURE & FARMING</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row mb-3">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://3.imimg.com/data3/IS/MS/GLADMIN-105901/rice-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Rice</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Basmati Rice</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Kolam Rice</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Ponni Rice</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Sona Masoori Rice</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://3.imimg.com/data3/JQ/XB/GLADMIN-3396/wheat-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Wheat</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Wheat Grains</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Milling Wheat</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Lokwan Wheat</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://3.imimg.com/data3/QL/BL/GLADMIN-1571/pulses-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Pulses</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Toor Dal</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Chana Dal</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Urad Dal</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Moong Dal</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://hm.imimg.com/imhome_gifs/veg01.png" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Fresh Vegetables</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Potato</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Onion</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Tomato</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Mushroom</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/2/SO/AM/JW/5728828/whole-spices-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Whole Spices</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Green Cardamom</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Black Pepper</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Cardamom</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Turmeric</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://5.imimg.com/data5/QK/BB/TN/SELLER-5388819/pumpkin-seeds-2--125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Seeds</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Vegetable Seeds</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Hybrid Seeds</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Seed Spices</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Oil Seeds</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://5.imimg.com/data5/CV/JJ/MY-1845536/poshan-npk-liquid-fertilizer-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Fertilizer</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Organic Fertilizers</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Bio Fertilizers</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Vermicompost</p>
+                                        </a>
+                                        <a href="">
+                                            <p>NPK Fertilizer</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://5.imimg.com/data5/KJ/GZ/SN/SELLER-11596263/alpler-disc-plough-125x125.jpg" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Agricultural Tools</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Agricultural Sprayers</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Agricultural Plough</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Disc Harrow</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Land Leveler</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border h-100 p-3 d-flex">
+                                    <div class="col-lg-3 d-flex align-items-center">
+                                        <img src="https://5.imimg.com/data5/ML/AA/SC/SELLER-4060804/manual-power-weeder-125x125.png" alt="" class="w-100" />
+                                    </div>
+                                    <div class="col-lg-8 ps-3">
+                                        <a href="">
+                                            <p class="fw-bold">Agricultural Machinery</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Brush Cutters</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Chain Saw</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Power Weeder</p>
+                                        </a>
+                                        <a href="">
+                                            <p>Power Tiller</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="row">
+                    <h4 class="fw-bold">TESTIMONIAL</h4>
+                    <h6 class="testi_text">
+                        See What Our <br />
+                        Clients Say About Us
+                    </h6>
+
+                    <div class="col-md-6 pt-3">
+                        <div class="containersd">
+                            <input type="radio" name="nav" id="first" checked />
+                            <input type="radio" name="nav" id="second" />
+                            <input type="radio" name="nav" id="third" />
+
+                            <label for="first" class="first"></label>
+                            <label for="second" class="second"></label>
+                            <label for="third" class="third"></label>
+
+                            <div class="one slides">
+                                <blockquote>
+                                    <span class="leftq quotes">&ldquo;</span> My rice export business grew by 150% in the first year, followed by a sustained behavior in the consecutive years<span
+                                        class="rightq quotes"
+                                        >&bdquo;
+                                    </span>
+                                </blockquote>
+                                <img class="imgs" src="https://www.tradologie.com/lp/img/dummy.jpg" width="170" height="130" />
+                                <h2>Steve Kruger</h2>
+                                <h6>UI/UX Designer at Woof Design Studio</h6>
+                            </div>
+
+                            <div class="two slides">
+                                <blockquote>
+                                    <span class="leftq quotes">&ldquo;</span> My rice export business grew by 150% in the first year, followed by a sustained behavior in the consecutive years<span
+                                        class="rightq quotes"
+                                        >&bdquo;
+                                    </span>
+                                </blockquote>
+                                <img class="imgs" src="https://www.tradologie.com/lp/img/dummy.jpg" width="170" height="130" />
+                                <h2>John Doe</h2>
+                                <h6>Developer Relations at Woof Studios</h6>
+                            </div>
+
+                            <div class="three slides">
+                                <blockquote>
+                                    <span class="quotes leftq"> &ldquo;</span> My rice export business grew by 150% in the first year, followed by a sustained behavior in the consecutive years<span
+                                        class="rightq quotes"
+                                        >&bdquo;
+                                    </span>
+                                </blockquote>
+                                <img class="imgs" src="https://www.tradologie.com/lp/img/dummy.jpg" width="170" height="130" />
+                                <h2>Steve Stevenson</h2>
+                                <h6>CEO Woof Web Design Studios</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-3 d-flex justify-content-center">
+                        <img src="https://www.tradologie.com/lp/img/testimonial.jpg" alt="" height="315" class="w-100" style="object-fit: cover" />
+                    </div>
+                </div>
+            </div>
+            <section class="">
+                <div class="container">
+                    <div class="row pt-4 py-4">
+                        <h4 class="pt-3 fw-bold">TRADOLOGIE VIDEOS</h4>
+                        <div class="col-md-6 pt-3">
+                            <a href="https://www.youtube.com/embed/WbHA-ZElpY0" target="_blank">
+                                <img width="100%" height="300" style="object-fit: contain" src="https://www.tradologie.com/lp/img/youtubeseller.jpg" alt="Buyer Process"
+                            /></a>
+                        </div>
+
+                        <div class="col-md-6 pt-3">
+                            <a href="https://www.youtube.com/embed/WbHA-ZElpY0" target="_blank">
+                                <img width="100%" height="300" src="https://www.tradologie.com/lp/img/youtube.jpg" alt="seller Process" style="object-fit: contain" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="downlaod_app" id="download_app">
+                <div class="container">
+                    <div class="mobile_section">
+                        <img src="https://www.tradologie.com/lp/img/app.png" alt="app download" />
+                    </div>
+                    <div class="app_download_section">
+                        <div class="app_heading">
+                            <h3>Download Tradologie</h3>
+                            <h3>App Now</h3>
+                        </div>
+                        <div class="app_text">
+                            <p>Fast, Simple &amp; Delightful</p>
+                            <p>All it takes is 30 seconds to download the Tradologie App.</p>
+                        </div>
+                        <div class="android_ios">
+                            <div class="android">
+                                <h3>Download Buyers App</h3>
+                                <p>Available on Android and iOS</p>
+                                <div class="divide_app_img">
+                                    <a href="http://tradologie.com/lp/auto-detect.html"><img src="https://www.tradologie.com/lp/img/android.jpg" alt="android for buyers" /></a>
+                                    <a href="http://tradologie.com/lp/auto-detect.html"><img src="https://www.tradologie.com/lp/img/ios.jpg" alt="ios for buyers" /></a>
+                                </div>
+                            </div>
+                            <div class="android">
+                                <h3>Download Sellers App</h3>
+                                <p>Available on Android</p>
+                                <div class="divide_app_img">
+                                    <a href="https://play.google.com/store/apps/details?id=com.tradologie.seller"
+                                        ><img src="https://www.tradologie.com/lp/img/android.jpg" alt="android for seller"
+                                    /></a>
+                                    <a href="https://apps.apple.com/in/app/tradologie-seller/id1409585546"><img src="https://www.tradologie.com/lp/img/ios.jpg" alt="ios for seller" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="footer p-5">
+                <div class="container">
+                    <div class="footer_dcrip">
+                        <div class="trad_products">
+                            <p>
+                                <a href="products-menu.html"><strong class="fw-bold">Products:</strong></a
+                                ><br /><b> Agri Commodities:</b>&nbsp; <a href="rice-trading.html">Rice:</a> / <a href="basmati-rice.html">Basmati Rice:</a>
+                                <a href="traditional-rice-india.html">Traditional Basmati</a> / <a href="golden-sella-rice.html">Golden Sella Rice</a> /
+                                <a href="kohinoor-basmati-rice.html">Kohinoor Basmati Rice</a> / <a href="1121-basmati-rice.html">1121 Basmati Rice</a> /
+                                <a href="basmati-rice-price.html">Basmati Rice Price</a> / <a href="patanjali-basmati-rice.html">Patanjali Basmati Rice</a> /
+                                <a href="daawat-basmati-rice.html">Daawat Basmati Rice</a> / <a href="ir-64-parboiled-rice.html">IR 64 Parboiled Rice</a> /
+                                <a href="sella-basmati-rice.html">Sella Basmati Rice</a> / <a href="1509-basmati.html">1509 Basmati Rice</a> /
+                                <a href="sugandha-basmati.html">Sugandha Basmati Rice</a> / <a href="pusa-basmati.html">Pusa Basmati Rice</a> / <a href="1401-basmati.html">1401 Basmati Rice</a> /
+                                <a href="sharbati-basmati.html">Sharbati Basmati Rice</a> / <a href="PR-11-14-rice.html">PR-11/14 Basmati Rice</a> /
+                                <a href="traditional-basmati-pakistani.html">Pakistan Traditional Basmati</a> / <a href="1121-basmati-pakistani.html">Pakistan 1121 Basmati Rice </a>
+                                <a href="super-kernel.html">SUPER KERNEL Basmati Rice</a> / <a href="C-9-rice.html">C-9 Pakistan Rice</a> <a href="non-basmati-rice.html">Non Basmati Rice:</a>
+                                <a href="IRRI-6-rice.html">IRRI-6 Long Grain Rice</a> / <a href="PR-106-rice.html">PR-106 Non Basmati Rice</a> /
+                                <a href="PK-386-rice.html">PK 386 Non Basmati Rice</a> / <a href="indian-basmati-rice.html">Indian Basmati Rice</a> /
+                                <a href="sona-masoori.html">Sona Masoori Rice</a> / <a href="IR-8-rice.html">IR-8 Non Basmati Rice</a> / <a href="IR-64-rice.html"> IR-64 Non Basmati Rice</a> /
+                                <a href="IRRI-9-rice.html">IRRI-9 Long Grain Rice</a> <a href="IR-36-rice.html">IR-36 Non Basmati Rice</a> / <a href="swarna-rice.html">Swarna Non Basmati Rice</a> /
+                                <a href="medium-grain-rice.html">Medium Grain Rice:</a> <a href="jasmine-rice.html">Jasmine Rice</a> / <a href="calrose-rice.html">Calrose Rice</a> /
+                                <a href="japonica-rice.html">Japonica Rice</a> / <a href="vietnamese-rice.html"> Vietnamese Rice</a> / <a href="round-grain.html">Round Grain Rice</a> /
+                                <a href="matta-rice.html">Matta Rice</a> / <a href="EMATA-rice.html">EMATA Rice</a> Wheat: <a href="wheat.html">Wheat</a> /
+                                <a href="wheat-durum.html">Wheat (Durum)</a> Barley: <a href="barley.html">Barley</a> / <a href="barley-forage.html">Barley (forage)</a> Pulses:
+                                <a href="red-kidney-beans.html">Red Kidney beans</a> / <a href="light-speckled-kidney-beans.html">Light Speckled Kidney beans</a> /
+                                <a href="chickpeas.html">Chickpeas (Desi)</a> / <a href="chickpeas-kabuli.html">Chickpeas (Kabuli)</a> / <a href="black-matpe.html">Black Matpe</a> /
+                                <a href="green-mung.html">Green Mung</a>
+                                <a href="edible-oils.html">Edible oils:</a> <a href="desi-ghee.html">Desi Ghee</a> / <a href="mustard-oil.html">Mustard Oil</a> /
+                                <a href="sunflower-oil.html">Sunflower Oil</a> / <a href="olive-oil.html">Olive Oil</a> / <a href="rice-bran-oil.html">Rice bran Oil</a> /
+                                <a href="flaxseed-oil.html">Flaxseed Oil</a> / <a href="groundnut-oil.html">Groundnut Oil</a> / <a href="palm-oil.html">Palm Oil</a> /
+                                <a href="sesame-oil.html">Sesame Oil</a> / <a href="edible-almond-oil.html">Edible Almond Oil</a> / <a href="cashew-nut-oil.html">Cashew Nut Oil</a> /
+                                <a href="canola-oil.html">Canola Oil</a> / <a href="soybean-oil.html">Soybean Oil</a> <b>Construction Materials:</b>&nbsp; <a href="cement.html">Cement:</a>
+                                <a href="jk-super-cement-opc-53.html">JK Cement OPC 53</a> / <a href="acc-cement-opc-53.html">ACC Cement OPC 53</a> /
+                                <a href="kamdhenu-cement-opc-53.html">Kamdhenu Cement OPC 53</a> / <a href="ultratech-cement-opc-53.html">UltraTech Cement OPC 53</a> /
+                                <a href="wonder-cement-opc-53.html">Wonder Cement OPC 53</a> / <a href="ambuja-cement-opc-53.html">Ambuja Cement OPC 53</a> /
+                                <a href="duraguard-cement-opc-53.html">Duraguard Cement OPC 53</a> / <a href="birla-cement-opc-53.html">Birla Cement OPC 53</a> /
+                                <a href="rockstrong-cement-opc-53.html">Rockstrong Cement OPC 53</a> / <a href="acc-cement-opc-43.html">ACC Cement OPC 43</a> /
+                                <a href="jk-cement-opc-43.html">JK Cement OPC 43</a> / <a href="kamdhenu-cement-opc-43.html">Kamdhenu Cement OPC 43</a> /
+                                <a href="ultratech-cement-opc-43.html">UltraTech Cement OPC 43</a> / <a href="wonder-cement-opc-43.html">Wonder Cement OPC 43</a> /
+                                <a href="ambuja-cement-opc-43.html">Ambuja Cement OPC 43</a> / <a href="duraguard-cement-opc-43.html">Duraguard Cement OPC 43</a> /
+                                <a href="birla-cement-opc-43.html">Birla Cement OPC 43</a> / <a href="rockstrong-cement-opc-43.html">Rockstrong Cement OPC 43</a> /
+                                <a href="bangur-cement-opc-43.html">Bangur Cement OPC 43</a> / <a href="nirmax-cement-opc-43.html">Nirmax Cement Cement OPC 43</a> /
+                                <a href="acc-cement-ppc.html">ACC Cement PPC</a> / <a href="jk-cement-ppc.html">JK Super Cement PPC</a> / <a href="kamdhenu-cement-ppc.html">Kamdhenu Cement PPC</a> /
+                                <a href="ultratech-cement-ppc.html">UltraTech Cement PPC</a> / <a href="wonder-cement-ppc.html">Wonder Cement PPC</a> /
+                                <a href="ambuja-cement-ppc.html">Ambuja Cement PPC</a> / <a href="duraguard-cement-ppc.html">Duraguard Cement PPC</a> /
+                                <a href="rockstrong-cement-ppc.html">Rockstrong Cement PPC</a> / <a href="birla-cement-ppc.html">Birla Cement PPC</a> /
+                                <a href="bangur-cement-ppc.html">Bangur Cement PPC</a> / <a href="mycem-cement-ppc.html">Mycem Cement PPC</a> / <a href="nirmax-cement-ppc.html">Nirmax Cement PPC</a>
+                                <a href="plywood.html">Plywood:</a> <a href="plywood-waterproof.html">Plywood Waterproof</a> / <a href="mr-grade-plywood.html">MR Grade Plywood</a> /
+                                <a href="shuttering-plywood-waterproof.html">Shuttering Plywood Waterproof</a> / <a href="shuttering-plywood-mr-grade.html">Shuttering Plywood MR Grade</a> /
+                                <a href="block-board-waterproof.html">Block Board Waterproof</a> / <a href="flushdoor-plywood.html">Flushdoor Plywood</a><br />
+                                <b>Raw Materials:</b>&nbsp; <a href="tmt-steel.html">Steels:</a> <a href="tmt-saria.html">TMT Saria</a> / <a href="steel-ingots.html">Steel Ingots</a> /
+                                <a href="steel-billets.html">Steel Billets</a> / <a href="tmt-bars.html">Steel Billets</a> / <a href="coal.html">Coal</a> /
+                                <a href="rice-importers-in-saudi-arabia.html">Rice Importers In Saudi Arabia</a> / <a href="rice-importers-in-kuwait.html">Rice Importers In Kuwait</a> /
+                                <a href="rice-importers-in-uae.html">Rice Importers In UAE</a>
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="f1_content">
+                                    <h4>Tradologie.com</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/brochure.html" target="_blank">Brochure</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.tradologie.com/" target="_blank">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="how-it-work.html">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="1121-basmati-rice-suppliers.html">1121 Basmati Rice Suppliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/landing/gulfood/">Gulfood 2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/spice-trade.html">SPICE TRADE GLOBALLY</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="f1_content">
+                                    <h4>Tradologie.com</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/brochure.html" target="_blank">Brochure</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.tradologie.com/" target="_blank">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="how-it-work.html">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="1121-basmati-rice-suppliers.html">1121 Basmati Rice Suppliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/landing/gulfood/">Gulfood 2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/spice-trade.html">SPICE TRADE GLOBALLY</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="f1_content">
+                                    <h4>Tradologie.com</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/brochure.html" target="_blank">Brochure</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.tradologie.com/" target="_blank">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="how-it-work.html">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="1121-basmati-rice-suppliers.html">1121 Basmati Rice Suppliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/landing/gulfood/">Gulfood 2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/spice-trade.html">SPICE TRADE GLOBALLY</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="f1_content">
+                                    <h4>Tradologie.com</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/brochure.html" target="_blank">Brochure</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.tradologie.com/" target="_blank">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="how-it-work.html">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="1121-basmati-rice-suppliers.html">1121 Basmati Rice Suppliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/landing/gulfood/">Gulfood 2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.tradologie.com/lp/spice-trade.html">SPICE TRADE GLOBALLY</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </section>
+
+            <div class="last-footer">
+                <p>Copyright © 2014-2022 Super E Factory Depot Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+            $(".slider-for").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: ".slider-nav",
+            });
+            $(".slider-nav").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: ".slider-for",
+                dots: true,
+                focusOnSelect: true,
+            });
+            $("a[data-slide]").click(function (e) {
+                e.preventDefault();
+                var slideno = $(this).data("slide");
+                $(".slider-nav").slick("slickGoTo", slideno - 1);
+            });
+        </script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>

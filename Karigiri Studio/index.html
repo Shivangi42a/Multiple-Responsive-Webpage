@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <title>Karigiri Studio</title>
+    </head>
+    <style>
+        body {
+            font-family: poppins;
+        }
+        img {
+            position: relative;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: 0.25s linear;
+        }
+        .button-inside {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .lehenga {
+            font-size: 1.3rem;
+        }
+        .carousel-image {
+            height: 550px !important;
+        }
+        .box:hover > .hover-img {
+            opacity: 0.9;
+            transform: scale(1.06);
+        }
+        .button-inside:hover {
+            background-color: #fff;
+            color: #222 !important;
+        }
+        .fab,
+        .fa {
+            font-size: 30px;
+            padding: 1rem;
+            color: #999;
+            transition: 0.25s linear;
+        }
+        .fa {
+            font-size: 25px;
+        }
+        .fab:hover,
+        .fa:hover {
+            transform: translateY(-10px);
+        }
+        .btn-hover {
+            transition: 0.25s linear;
+        }
+        .btn-hover:hover {
+            background-color: lightpink;
+        }
+        .fa-facebook:hover {
+            color: lightskyblue;
+        }
+        .fa-instagram:hover {
+            color: violet;
+        }
+        .fa-whatsapp:hover {
+            color: lightgreen;
+        }
+        .fa-phone:hover {
+            color: royalblue;
+        }
+        .scrollTop {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 182, 193, 0.8);
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s linear;
+        }
+        .scrollTop.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        .logo {
+            width: 225px;
+            transition: 0.5 linear;
+        }
+        .logo.active {
+            width: 200px;
+        }
+        .navbar-anim {
+            padding: 1rem;
+            transition: 0.5s linear;
+        }
+        .navbar-anim.active {
+            padding: 0.5rem;
+        }
+        .dropdown {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding-block: 25px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.25s all ease-in-out;
+        }
+        li {
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+        .nav-item:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdownContainer {
+            display: flex;
+            justify-content: space-around;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+        .dropdownHead {
+            font-weight: bold;
+        }
+        @media (max-width: 822px) {
+            .navbar-nav {
+                font-size: 0.85rem;
+            }
+        }
+        @media (max-width: 767px) {
+            .logo {
+                width: 255px !important;
+            }
+            .scrollTop {
+                width: 40px;
+                height: 40px;
+                background-size: 30px;
+            }
+            .navbar-anim {
+                padding: 0.75rem;
+            }
+            .navbar-anim.active {
+                padding: 0.75rem;
+            }
+            .nav-link {
+                text-align: center;
+            }
+        }
+    </style>
+    <body>
+        <!-- we-ship-worldwide -->
+        <div class="container-fluid bg-dark">
+            <h6 class="text-center text-light mb-0 p-2">WE SHIP WORLDWIDE.</h6>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top mb-0 navbar-anim">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="" class="logo" /></a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="border: none"
+            >
+                <i class="fas fa-bars" style="font-size: 1.75rem"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Woman <span class="sr-only">(current)</span></a>
+                        <!-- dropdown -->
+
+                        <div class="dropdown">
+                            <div class="dropdownContainer">
+                                <ul>
+                                    <li class="dropdownHead">Featured</li>
+                                    <li>
+                                        <a href="">New Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="">sale</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="dropdownHead">Ready to Wear</li>
+                                    <li>
+                                        <a href="">suits</a>
+                                    </li>
+                                    <li>
+                                        <a href="">kurtas and tunics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">lehangas</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Gowns</a>
+                                    </li>
+                                    <li>
+                                        <a href="">drapes</a>
+                                    </li>
+                                    <li>
+                                        <a href="">contemporary</a>
+                                    </li>
+                                    <li>
+                                        <a href="">loungewear</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="dropdownHead">Accessories</li>
+                                    <li>
+                                        <a href="">masks</a>
+                                    </li>
+                                    <li>
+                                        <a href="">perfumes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- end -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collections<span class="sr-only">(current)</span></a>
+                        <!-- dropdown -->
+
+                        <div class="dropdown">
+                            <div class="dropdownContainer">
+                                <ul>
+                                    <li>
+                                        <a href="">Firuz</a>
+                                    </li>
+                                    <li>
+                                        <a href="">kalakaar</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Rooh</a>
+                                    </li>
+                                    <li>
+                                        <a href="">the secret garden</a>
+                                    </li>
+                                    <li>
+                                        <a href="">AVNI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- end -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Designer Wear<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- carousel -->
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="3000">
+                    <img src="carousel1.jpg" class="d-block w-100 carousel-image" alt="" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="carousel2.jpg" class="d-block w-100 carousel-image" alt="" />
+                </div>
+                <div class="carousel-item">
+                    <img src="carousel3.jpg" class="d-block w-100 carousel-image" alt="" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <!-- kurta -->
+        <div class="container my-5">
+            <div class="row">
+                <!-- left -->
+                <div class="col-md-6">
+                    <!-- first row -->
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="box overflow-hidden">
+                                <img src="kurta and tunics.jpg" alt="" height="231" class="hover-img" />
+                                <a href="kurta.html" class="btn border text-white button-inside">Kurtas & Tunics</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second row -->
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="box overflow-hidden">
+                                <img src="loungewear.jpg" alt="" height="231" class="hover-img" />
+                                <button class="btn border text-white button-inside">Loungewear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="col-md-6 overflow-hidden">
+                    <div class="box overflow-hidden">
+                        <img src="drapes.jpg" alt="" height="478" class="hover-img" />
+                        <button class="btn border text-white button-inside">Drapes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- perfume -->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="box overflow-hidden">
+                        <img src="perfume.jpg" alt="" height="320" class="hover-img" />
+                        <button class="btn border text-white button-inside">Perfumes</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="box overflow-hidden">
+                        <img src="suits.jpg" alt="" height="320" class="hover-img" />
+                        <button class="btn border text-white button-inside">Suits</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box overflow-hidden">
+                        <img src="contemporary.jpg" alt="" height="320" class="hover-img" />
+                        <button class="btn border text-white button-inside">Contemporary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ethnic -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3 class="fw-bold">TRADITIONAL ETHNIC WEAR</h3>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="box overflow-hidden">
+                        <img src="shop woman.jpg" alt="" height="520" class="hover-img" />
+                        <button class="btn border text-white button-inside">Shop Woman</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box overflow-hidden">
+                        <img src="shop contemporary.jpg" alt="" height="520" class="hover-img" />
+                        <button class="btn border text-white button-inside">Shop Contemporary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lehnga -->
+        <div class="container mb-5">
+            <div class="row">
+                <!-- left -->
+                <div class="col-md-9">
+                    <img src="lehnga.jpg" alt="" height="596" />
+                </div>
+                <!-- right -->
+                <div class="col-md-3 text-center d-flex">
+                    <div class="align-self-center">
+                        <h2 class="text-uppercase lehenga">lehnga for women</h2>
+                        <p class="text-uppercase text-justify text-black-50" style="font-size: small">
+                            embroidered and carefully embellished, our festive lehngas welcome you to a world of understated opulence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wedding cotoure -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3 class="fw-bold">WEDDING COTOURE</h3>
+            </div>
+        </div>
+        <div class="container-fluid px-0 mb-5">
+            <img src="wedding-cotoure.jpg" alt="" height="486" />
+        </div>
+        <!-- best ethnic brands in delhi -->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="fw-bold text-uppercase">Best ethnic wear brands in Delhi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Ethnic wear is a common term used to refer to clothing based and belonging to one's natural heritage and culture. Indian ethnic wear has always been popular in rural as well as
+                        urban areas, especially when it comes to celebratory parties, lunches and dinners covering a wide range of occasions ranging from weddings to cocktail parties.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="" class="btn border-dark btn-hover">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid bg-dark py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-md-3 mb-4">
+                        <img src="logo.png" alt="" class="logo" />
+                        <p class="text-uppercase text-white-50 mt-3">bookings open for private</p>
+                        <p class="text-uppercase text-white-50">appointment at the</p>
+                        <p class="text-uppercase text-white-50">design headquarters</p>
+                        <p class="text-uppercase text-white-50">call for whatsapp <br />+91 98114 19280</p>
+                    </div>
+                    <!-- discover -->
+                    <div class="col-md-3 mb-4">
+                        <h4 class="text-uppercase text-white">DISCOVER</h4>
+                        <p class="text-uppercase text-white-50">WOMAN</p>
+                        <p class="text-uppercase text-white-50">COLLECTIONS</p>
+                        <p class="text-uppercase text-white-50">BLOG</p>
+                        <p class="text-uppercase text-white-50">CONTACT</p>
+                    </div>
+                    <!-- important links -->
+                    <div class="col-md-3 mb-4">
+                        <h4 class="text-uppercase text-white">important links</h4>
+                        <p class="text-uppercase text-white-50">faq</p>
+                        <p class="text-uppercase text-white-50">terms and conditions</p>
+                        <p class="text-uppercase text-white-50">privacy and policy</p>
+                        <p class="text-uppercase text-white-50 mb-4">shipping and returns</p>
+                        <h4 class="text-uppercase text-white mb-0">beach bulletin</h4>
+                        <p class="text-uppercase text-white-50 mb-3">
+                            <em>Sync in with our fashion stories style guides and much more </em>
+                        </p>
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ENTER YOUR EMAIL" />
+                            </label>
+                            <a href="" class="btn bg-primary text-white">SUBSCRIBE</a>
+                        </div>
+                    </div>
+                    <!-- contact -->
+                    <div class="col-md-3">
+                        <h4 class="text-uppercase text-white">contact</h4>
+                        <p class="text-uppercase text-white-50">Design Headquarters:</p>
+                        <p class="text-uppercase text-white-50 mb-0">Shop number 11,First Floor, Kapil Vihar</p>
+                        <p class="text-uppercase text-white-50 mb-0">opposite metro pillar number 349</p>
+                        <p class="text-uppercase text-white-50 mb-0">Pitampura, Delhi, New Delhi</p>
+                        <p class="text-uppercase text-white-50 mb-3">India - 110034</p>
+                        <p class="text-uppercase text-white-50 mb-0">info@karigiristudio.com</p>
+                        <p class="text-uppercase text-white-50 mb-4">+91 98114 19280</p>
+                        <h4 class="text-uppercase text-white mb-3">stay in touch</h4>
+                        <div class="row justify-content-">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- go-to-top -->
+        <div class="scrollTop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+        <!-- end -->
+        <!-- script -->
+        <script>
+            window.addEventListener("scroll", function () {
+                var scroll = document.querySelector(".scrollTop");
+                scroll.classList.toggle("active", window.scrollY > 700);
+            });
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+            window.addEventListener("scroll", function () {
+                var scroll = document.querySelector(".logo");
+                scroll.classList.toggle("active", window.scrollY > 10);
+            });
+            window.addEventListener("scroll", function () {
+                var scroll = document.querySelector(".navbar-anim");
+                scroll.classList.toggle("active", window.scrollY > 10);
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- end -->
+    </body>
+</html>

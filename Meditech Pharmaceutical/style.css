@@ -1,0 +1,194 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    --accent-color: #8fafc2;
+}
+
+.nav-bar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #09075c;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header-img img {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.behind-the-science {
+    width: 70%;
+    padding: 5rem;
+    margin: 0 auto;
+}
+
+.behind-the-science h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.behind-the-science h3 {
+    margin-top: 0;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: lighter;
+}
+
+.behind-the-science p {
+    margin-top: 2rem;
+}
+
+.parallax {
+    background: url("https://meditechpharmaceutical.net/public/images/bg-sec2.jpg");
+    height: 740px;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.parallax h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+
+.parallax h1 span {
+    color: var(--accent-color);
+}
+
+.parallax p {
+    font-size: 1rem;
+    width: 50%;
+    color: gray;
+    margin-bottom: 3rem;
+}
+
+.parallax .content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content img {
+    margin-bottom: 2rem;
+    width: 25%;
+}
+
+.content button {
+    display: block;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.injections {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 3rem 10rem;
+    background-color: #666;
+    margin-top: 0;
+}
+
+.injections img {
+    width: 45%;
+}
+
+.injections li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.injections li:last-child {
+    border-right: 0;
+}
+
+.injections li p {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+footer .left img {
+    width: 25%;
+}
+
+footer .left {
+    flex-basis: 50%;
+}
+
+footer .left p {
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+footer .right {
+    display: flex;
+}
+
+footer .right .right-one,
+footer .right .right-two {
+    list-style: none;
+    margin-top: 0;
+}
+
+footer .right .right-one li,
+footer .right .right-two li {
+    margin-bottom: 0.8rem;
+}
+
+footer .right .right-one a,
+footer .right .right-two a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 750;
+    font-size: 0.9rem;
+}
+
+footer .right .right-one a:hover,
+footer .right .right-two a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
